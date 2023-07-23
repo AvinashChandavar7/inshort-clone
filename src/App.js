@@ -12,7 +12,7 @@ const App = () => {
   const newsApi = async () => {
     try {
 
-      const URL = `https://newsapi.org/v2/top-headlines?country=in&apiKey=${process.env.REACT_APP_API}&category=${category}&pageSize=${loadMore}`;
+      const URL = `https://newsapi.org/v2/top-headlines?country=in&apiKey=e989f4a93cb24525a6b9224f12bf7323category=${category}&pageSize=${loadMore}`;
       const news = await axios.get(URL)
       setNewsArray(news.data.articles);
       setNewsResutls(news.data.totalResults);
